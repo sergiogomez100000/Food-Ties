@@ -1,14 +1,10 @@
 {{!-- for each group, render partial --}}
 {{!-- for each partial, create four images --}}
 <button id="startBtn">Start</button>
-{{#each data}}
-<div class= "group d-none" id={{@index}}>{{>foods-groups}}</div>
-{{/each}}
-
-<div class= "group d-none" id="result-container">{{>personality}}</div>
-
-
-
-
+<div id="card-container">
+    {{#each data}}
+    <div class="group d-none" id={{@index}}>{{>foods-groups}}</div>
+    {{/each}}
+</div>
 
 <script src="/js/quiz.js"></script>

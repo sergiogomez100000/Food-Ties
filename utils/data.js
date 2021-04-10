@@ -1,8 +1,3 @@
-//const fixPath = arr => arr.map(group => group.images.map(i => i.image_url.slice(7)))
-const fixPath = (arr) =>
-  arr.forEach((group) =>
-    group.images.forEach((img) => (img.image_url = img.image_url.slice(7)))
-  );
 
 const myArray = [
   {
@@ -15,26 +10,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/American_chickenandwaffles.jpg",
+        image_url: "/images/American_chickenandwaffles.jpg",
         //describes image
         alt: "Chicken and Waffles ",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/American_hamburger.jpeg",
+        image_url: "/images/American_hamburger.jpeg",
         alt: "Hamburger",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/American_smores.jpg",
+        image_url: "/images/American_smores.jpg",
         alt: "S'more",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/American_hotwings.jpg",
+        image_url: "/images/American_hotwings.jpg",
         alt: "Hot Wings",
       },
     ],
@@ -48,26 +43,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Russian-beef-stroganoff.jpg",
+        image_url: "/images/Russian-beef-stroganoff.jpg",
         //describes image
         alt: "Beef Stroganoff",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Russian-Borscht.jpg",
+        image_url: "/images/Russian-Borscht.jpg",
         alt: "Borscht",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Russian_blini.jpg",
+        image_url: "/images/Russian_blini.jpg",
         alt: "Blini",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Russian-soup.jpg",
+        image_url: "/images/Russian-soup.jpg",
         alt: "Spicy Soup",
       },
     ],
@@ -81,26 +76,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Japan_sushi.jpg",
+        image_url: "/images/Japan_sushi.jpg",
         //describes image
         alt: "Sushi",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Japan_ramen.jpg",
+        image_url: "/images/Japan_ramen.jpg",
         alt: "Ramen",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Japan_mochi.jpeg",
+        image_url: "/images/Japan_mochi.jpeg",
         alt: "Mochi",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Japan_chickenkatsu.jpg",
+        image_url: "/images/Japan_chickenkatsu.jpg",
         alt: "Chicken Katsu",
       },
     ],
@@ -114,26 +109,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Italian_lasagna.jpeg",
+        image_url: "/images/Italian_lasagna.jpeg",
         //describes image
         alt: "Lasagna",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Italian_chickenandpolenta.jpeg",
+        image_url: "/images/Italian_chickenandpolenta.jpeg",
         alt: "Chicken and Polenta",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Italian_tiramisu.jpeg",
+        image_url: "/images/Italian_tiramisu.jpeg",
         alt: "Tiramisu",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Italian_penne_all.jpeg",
+        image_url: "/images/Italian_penne_all.jpeg",
         alt: "Penne all'arrabbiata ",
       },
     ],
@@ -147,26 +142,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Thailand_padthai.jpeg",
+        image_url: "/images/Thailand_padthai.jpeg",
         //describes image
         alt: "Pad Thai",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Thailand_kai_yang.jpeg",
+        image_url: "/images/Thailand_kai_yang.jpeg",
         alt: "Grilled Chicken, Kai Yang",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Thailand_mooncake.jpeg",
+        image_url: "/images/Thailand_mooncake.jpeg",
         alt: "Mooncake",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Thailand_green_curry.jpeg",
+        image_url: "/images/Thailand_green_curry.jpeg",
         alt: "Thai Green Curry",
       },
     ],
@@ -180,26 +175,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Moroccan_Pastilla.jpeg",
+        image_url: "/images/Moroccan_Pastilla.jpeg",
         //describes image
         alt: "Pastilla",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Morrocan_couscous.jpeg",
+        image_url: "/images/Morrocan_couscous.jpeg",
         alt: "Couscous",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Morrocan_chebakia.jpeg",
+        image_url: "/images/Morrocan_chebakia.jpeg",
         alt: "Chebakia",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Morrocan_Taktouka.jpeg",
+        image_url: "/images/Morrocan_Taktouka.jpeg",
         alt: "Taktouka",
       },
     ],
@@ -213,26 +208,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Poland-blood-sausage.jpeg",
+        image_url: "/images/Poland-blood-sausage.jpeg",
         //describes image
         alt: "Blood Sausage",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Poland-Pierogi.jpeg",
+        image_url: "/images/Poland-Pierogi.jpeg",
         alt: "Pierogi",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Poland-babka.jpeg",
+        image_url: "/images/Poland-babka.jpeg",
         alt: "Babka",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Poland-spicypolish.jpeg",
+        image_url: "/images/Poland-spicypolish.jpeg",
         alt: "Spicy Polish peppers and meat",
       },
     ],
@@ -246,26 +241,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Israeli-Shawarma.jpg",
+        image_url: "/images/Israeli-Shawarma.jpg",
         //describes image
         alt: "Shawarma",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Israeli-Hummus.jpg",
+        image_url: "/images/Israeli-Hummus.jpg",
         alt: "Hummus",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Israeli-Rugelach.jpg",
+        image_url: "/images/Israeli-Rugelach.jpg",
         alt: "Rugelach",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Israeli-Shakshouka.jpg",
+        image_url: "/images/Israeli-Shakshouka.jpg",
         alt: "Shakshouka",
       },
     ],
@@ -279,26 +274,26 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/India-tandoori-chicken.jpeg",
+        image_url: "/images/India-tandoori-chicken.jpeg",
         //describes image
         alt: "Tandoori Chicken",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/India-dal.jpg",
+        image_url: "/images/India-dal.jpg",
         alt: "Dal",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/India-Jalebi.jpeg",
+        image_url: "/images/India-Jalebi.jpeg",
         alt: "Jalebi",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/India-ButterChicken.jpeg",
+        image_url: "/images/India-ButterChicken.jpeg",
         alt: "Butter Chicken",
       },
     ],
@@ -312,32 +307,30 @@ const myArray = [
         persId: "adventurer",
         persId2: 1,
         //URL for choice. Do path from folder
-        image_url: "public/images/Australia-vegemitetoast.jpeg",
+        image_url: "/images/Australia-vegemitetoast.jpeg",
         //describes image
         alt: "Vegmite Toast",
       },
       {
         persId: "homebody",
         persId2: 2,
-        image_url: "public/images/Australia-avotoast.jpg",
+        image_url: "/images/Australia-avotoast.jpg",
         alt: "Avocado Toast",
       },
       {
         persId: "sweet",
         persId2: 3,
-        image_url: "public/images/Australia-hot-jam-donuts.jpeg",
+        image_url: "/images/Australia-hot-jam-donuts.jpeg",
         alt: "Hot Jam Donuts",
       },
       {
         persId: "spicy",
         persId2: 4,
-        image_url: "public/images/Australia-green-curry-chicken-pie.jpeg",
+        image_url: "/images/Australia-green-curry-chicken-pie.jpeg",
         alt: "Green Curry Chicken Pie",
       },
     ],
   },
 ];
-fixPath(myArray);
-// console.log(myArray[0])
 
 module.exports = myArray;
