@@ -32,7 +32,7 @@ This application is a fun quiz, using food choices to provide the user with a ge
 
 ## Installation
 
-This application uses an MVC folder structure is created with Node.js, Express.js, Handlebars.js, MySQL, Sequelize, axios and is deployed on Heroku.
+This application uses an MVC folder structure is created with Node.js, Express.js, Handlebars.js, MySQL, Sequelize, morgan, bycrypt, express-session, and is deployed on Heroku.
 
 ## Usage
 
@@ -52,31 +52,3 @@ For any questions about our Project, contact us via Github <br/>
 [Theresa Pidutti](https://github.com/tpidutti) <br/>
 [Sergio Gomez](https://github.com/sergiogomez100000) 
 
-
-## Acceptance Criteria breakdown of tasks
-
-GIVEN 
-WHEN
-THEN
-
-Requirements:
-deploy using Heroku
-polished UI, responsive, interactive -> accept/respond to user input
-good coding standards
-README
-use Node.js, Express.js to create RESTful API -> API uses http requests to access and use data with GET/read, PUT/update, POST/create and DELETE data types, GET and POST routes
-use Handlebars.js for template engine
-use MySQL and Sequelize ORM for database
-one new library, package, or technology -> npm axios?? -> Promise based HTTP client for the browser and node.js
-MVC folder structure -> Model, View, Controllers/Routers
-include authentication -> express-session and cookies
-protect API keys and sensitive info with .env variables
-
-Presentation:
-overall concept of application
-motivation for development
-design process
-technologies used and brief description of how they work
-demo application
-direction for future development
-Be able to intelligently talk about tech

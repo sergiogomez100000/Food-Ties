@@ -5,7 +5,7 @@ const loginFormHandler = async (event) => {
   // Gather the data from the form elements on the page
   const email = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
-
+  
   console.log(email, password);
 
   if (email && password) {
@@ -23,6 +23,17 @@ const loginFormHandler = async (event) => {
     }
   }
 };
+
+
+
+function logToSign (){
+fetch("/signup", {
+  method: "GET",
+  headers: { "Content-Type": "application/json"},
+});
+}
+
+document.querySelector("#signup-btn").addEventListener("click", logToSign);
 
 document
   .querySelector("#login-btn")

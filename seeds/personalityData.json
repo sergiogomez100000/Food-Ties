@@ -1,25 +1,25 @@
 [
   {
     "title": "Adventurer",
-    "description": "Huzzah, you are an Adventurer! You are always seeking new stuff to try.",
+    "description": "Huzzah, you are an Adventurer! You are an innovator with an unquenchable thirst for new experiences, bold and imaginative.  You like to seek out new foods and experiment with classical dishes.",
     "image_url": "public/personality-images/tightrope.jpeg",
     "user_id": 1
   },
   {
     "title": "Homebody",
-    "description": "You want your home and nothing but your home. Anything new is not the way.",
-    "image_url": "public/personality-images/bubble boy.jpeg",
+    "description": "The pandemic hero, you are the Homebody! You are enthusiastic, creative, eager to help, though a bit quiet.  You enjoy the the ideal, classical, traditional foods of your heritage.",
+    "image_url": "public/personality-images/homebody2.jpeg",
     "user_id": 2
   },
   {
     "title": "Sweet",
-    "description": "You've got a Sweet Tooth Baybe! love the sweets, die with the sweets.",
-    "image_url": "public/personality-images/candy.jpeg",
+    "description": "You've got a sweet tooth, Baby! You are a caring and warm protector, dedicated and reliable.  You enjoy sharing your heart through your sweet treats.",
+    "image_url": "public/personality-images/sweetTooth.jpg",
     "user_id": 3
   },
   {
     "title": "Spicy",
-    "description": "Fiiiiiiiiiiyyyyaaaahhh, UUH! Blazin' saddles that's hot!",
+    "description": "Fiiiiyyyaahh, UUH! Blazin’ saddles that’s hot!  You are charming, spontaneous, always ready for some exciting new experiences.  Your food is never boring and often has an enjoyable kick to it.",
     "image_url": "public/personality-images/spicy.png",
     "user_id": 4
   }
