@@ -18,10 +18,19 @@ router.get("/login", (req, res) => {
   return res.render("login");
 });
 
-router.get("/personality", (req, res) => {
-  // const person = await Personality.findOne({where: {id: req.user.personality_id} })n
+router.get("/personality", 
+// async 
+(req, res) => {
+  // const person = await Personality.findOne({where: {id: req.user.personality_id} })
   console.log(req.user.id);
   return res.render("personality");
+});
+
+router.get("/login", (req, res) => {
+  if (!req.session.loggedIn) {
+    return res.redirect("/signup");
+  }
+  return res.render("login");
 });
 
 router.get("/signup", (req, res) => {
@@ -29,7 +38,7 @@ router.get("/signup", (req, res) => {
     res.redirect("/food");
     return;
   }
-  res.render("signup");
+ res.render("signup");
 });
 
 module.exports = router;
