@@ -1,6 +1,8 @@
 const router = require("express").Router();
-
-router.post("/", function (req, res) {
+const {User} = require('../../models/')
+console.log("IN QUIZ:")
+console.log(User)
+router.post("/", async function (req, res) {
   // In the session you have access to your users id
   console.log(req.session);
   // in the body you have access to the score from the front end
@@ -28,20 +30,14 @@ router.post("/", function (req, res) {
   }
   genPers();
 
-  // save it to the db using the user id to connect the score to the user
-connection.query(
-  'UPDATE user SET ? WHERE ?',
-  [
-    {
-     score: req.body.score
-    },
-    {
-      id: req.session.userId
-    }
-  ]
-)
-
-  // on the front end you will want to redirect the user to the personality page
+//   // save it to the db using the user id to connect the score to the user
+try{
+ const user = await User.update({score: req.body.score},{where: {id: req.session.userId}})
+ console.log(user);
+}catch(err){
+  console.log(err);
+}
+//   // on the front end you will want to redirect the user to the personality page
 
   res.json({ msg: "success!" });
 });
