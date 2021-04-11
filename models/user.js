@@ -43,6 +43,9 @@ User.init(
           key: "id"
         }
     },
+    score: {
+      type: DataTypes.INTEGER,
+  },
   },
     {
     hooks: {
