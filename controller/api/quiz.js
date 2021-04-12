@@ -1,8 +1,8 @@
-const router = require("express").Router();
-const { User, Personality } = require("../../models/");
-console.log("IN QUIZ:");
+const router = require('express').Router();
+const { User, Personality } = require('../../models/');
+console.log('IN QUIZ:');
 console.log(User);
-router.post("/", async function (req, res) {
+router.post('/', async function (req, res) {
   // try {
   // In the session you have access to your users id
   console.log(req.session);
@@ -14,16 +14,15 @@ router.post("/", async function (req, res) {
   //generates personality for user
 
   const pers = genPers(score);
-  let persData = await Personality.findOne({ where: { title: pers } });
-  persData = persData.get({ plain: true });
+  // let persData = await Personality.findOne({ where: { title: pers } });
+  // persData = persData.get({ plain: true });
   //   // save it to the db using the user id to connect the score to the user
 
   const user = await User.update(
-    { score: req.body.score },
+    { score: req.body.score, personality_id: pers },
     { where: { id: req.session.userId } }
   );
-  console.log(persData);
-  return res.render("personality", { data: persData });
+  return res.render('personality');
   // res.send("wefwefjwlkefj")
   // } catch (err) {
   //   console.log(err);
@@ -35,13 +34,13 @@ function genPers(score) {
   let personality;
 
   if (score >= 9 && score <= 17) {
-    personality = "Adventurer";
+    personality = 1;
   } else if (score >= 18 && score <= 25) {
-    personality = "Homebody";
+    personality = 2;
   } else if (score >= 26 && score <= 33) {
-    personality = "Sweet";
+    personality = 3;
   } else if (score >= 34 && score <= 40) {
-    personality = "Spicy";
+    personality = 4;
   }
   return personality;
 }
