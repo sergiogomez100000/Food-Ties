@@ -4,7 +4,7 @@ const myArray = require('../utils/data');
 const { User, Personality } = require('../models/');
 
 router.get('/', withAuth, (req, res) => {
-  //foodDb.findAll((data) => { do stuff with data })
+  res.redirect("/food")
 });
 
 router.get('/food', withAuth, (req, res) => {
@@ -24,7 +24,6 @@ router.get('/personality', async (req, res) => {
   const persId = user.get({ plain: true }).personality_id;
   let persData = await Personality.findOne({ where: { id: persId } });
   persData = persData.get({ plain: true });
-  persData.image_url = persData.image_url.slice(7);
   console.log(persData);
   return res.render('personality', persData);
 });
