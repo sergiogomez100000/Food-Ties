@@ -44,7 +44,7 @@ This project is licensed under MIT.
 
 ## Contribution
 
-This application was a collaborative effort between Sergio Gomez, Nate Shipp, and Theresa Pidutti.
+This application was a collaborative effort between Sergio Gomez, Nate Shipp, Theresa Pidutti, Tucker Beauchamp and Nick Rokosz.
 
 ## Questions
 For any questions about our Project, contact us via Github <br/>
