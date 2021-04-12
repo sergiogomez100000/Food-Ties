@@ -1,6 +1,8 @@
 {{!-- for each group, render partial --}}
 {{!-- for each partial, create four images --}}
+<div id="start">
 <button id="startBtn">Start</button>
+</div>
 <div id="card-container">
     {{#each data}}
     <div class="group d-none" id={{@index}}>{{>foods-groups}}</div>

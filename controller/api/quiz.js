@@ -23,8 +23,8 @@ router.post("/", async function (req, res) {
     { where: { id: req.session.userId } }
   );
   console.log(persData);
-  // res.render("personality", { data: persData });
-  res.send("wefwefjwlkefj")
+  return res.render("personality", { data: persData });
+  // res.send("wefwefjwlkefj")
   // } catch (err) {
   //   console.log(err);
   // }

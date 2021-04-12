@@ -26,11 +26,9 @@ const loginFormHandler = async (event) => {
 
 
 
-function logToSign (){
-fetch("/signup", {
-  method: "GET",
-  headers: { "Content-Type": "application/json"},
-});
+function logToSign (e){
+  e.preventDefault();
+window.location.href = "/signup"
 }
 
 document.querySelector("#signup-btn").addEventListener("click", logToSign);
