@@ -29,7 +29,6 @@ $(".card-body").on("click", async function (event) {
       },
       body: JSON.stringify({ score }),
     })
-    
       // .then((res) => res.json())
       // .then(function (data) {
       //   console.log(data);
