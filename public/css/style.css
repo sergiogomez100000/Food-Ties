@@ -70,6 +70,16 @@
     max-width: 500px;
 }
 
+.food-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.foodCard {
+    max-width: 800px;
+}
+
 /* .card-body{
     display: flex;
     flex-direction:row;
