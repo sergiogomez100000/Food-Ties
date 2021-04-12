@@ -4,7 +4,7 @@ const myArray = require('../utils/data');
 const { User, Personality } = require('../models/');
 
 router.get('/', withAuth, (req, res) => {
-  //foodDb.findAll((data) => { do stuff with data })
+  res.redirect("/food")
 });
 
 router.get('/food', withAuth, (req, res) => {
